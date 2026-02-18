@@ -3,5 +3,12 @@
   "name": "Video Muffler Extension",
   "version": "0.0.1",
 
-  "description": "Video muffler"
+  "description": "Video muffler",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
 }
