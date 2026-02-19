@@ -1,0 +1,4 @@
+body.is-loading #muffler-fieldset,
+body:not(.is-loading) #loading {
+  display: none;
+}

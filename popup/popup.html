@@ -1,0 +1,60 @@
+<!doctype html>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="./style.css" />
+<script src="../settings.js"></script>
+<script src="./script.js" defer></script>
+
+<body class="is-loading">
+  <div id="loading">Loading...</div>
+
+  <fieldset id="muffler-fieldset">
+    <legend>
+      <label>
+        <input type="checkbox" id="muffler-enabled" />
+        Enable muffling
+      </label>
+    </legend>
+
+    <details>
+      <fieldset id="biquad-fieldset">
+        <legend>
+          <label>
+            <input type="checkbox" id="biquad-enabled" />
+            Enable biquad filter
+          </label>
+        </legend>
+
+        <label>
+          Type:
+          <select id="biquad-type">
+            <option value="lowpass">Low pass</option>
+            <option value="highpass">High pass</option>
+            <option value="bandpass">Band pass</option>
+            <option value="lowshelf">Low shelf</option>
+            <option value="highshelf">High shelf</option>
+            <option value="peaking">Peaking</option>
+            <option value="notch">Notch</option>
+            <option value="allpass">All pass</option>
+          </select>
+        </label>
+
+        <label>
+          Q:
+          <input type="number" id="biquad-q" />
+        </label>
+
+        <label>
+          Frequency:
+          <input type="number" id="biquad-frequency" />
+        </label>
+
+        <label>
+          Gain:
+          <input type="number" id="biquad-gain" />
+        </label>
+      </fieldset>
+
+      <!--button id="reset">Reset</button-->
+    </details>
+  </fieldset>
+</body>

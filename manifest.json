@@ -8,7 +8,20 @@
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*"],
-      "js": ["content.js"]
+      "js": ["settings.js", "content.js"]
     }
-  ]
+  ],
+
+  "action": {
+    "default_title": "Muffler",
+    "default_popup": "popup/popup.html"
+  },
+
+  "permissions": ["storage"],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "video-muffler-extension@andreubotella.com"
+    }
+  }
 }
