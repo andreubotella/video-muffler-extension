@@ -7,7 +7,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.youtube.com/*"],
+      "matches": ["*://*.youtube.com/*", "*://*.nebula.tv/*"],
       "js": ["settings.js", "content.js"]
     }
   ],
